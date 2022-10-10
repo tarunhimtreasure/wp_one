@@ -1,2 +1,10 @@
 Setting up a new theme in wordpress
 
+1. echo get_post_template_uri() -> getting the absolute path.
+2. get_header() / get_footer() -> functions to call hader and footer files.
+3. custom header -> create a header file -> header-customName.php then call using <?php get_header('customName'); ?>
+4. register_nav_menus() -> registering custom menu for the theme.
+5. wp_nav_menu() -> calling the custom nav menus.
+6. the_content() -> showing page content.
+7. the_post() -> put this on every page.php to show content. eery thing is post in wordpress.
+8. 
