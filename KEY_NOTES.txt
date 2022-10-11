@@ -38,7 +38,10 @@ Setting up a new theme in wordpress
 27. register_sidebar() -> adding this line to function.php file / adding custom sidebar to website.
 28. get_sidebar() -> create a file sidebar.php and add code to this file and call using this function.
 29. get_title() -> getting the title of the website.
-30. 
+30. Error 404 page : create 404.php and add header and footer function.
+31. get_categories() / get_category_link()
+32. category are called texonomy in wordpress
+33. 
 
 
 
