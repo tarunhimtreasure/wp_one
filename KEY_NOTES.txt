@@ -6,5 +6,32 @@ Setting up a new theme in wordpress
 4. register_nav_menus() -> registering custom menu for the theme.
 5. wp_nav_menu() -> calling the custom nav menus.
 6. the_content() -> showing page content.
+7. get_the_content() -> fetch and store the data but doesn't display until 'echo' is used with this function.
 7. the_post() -> put this on every page.php to show content. eery thing is post in wordpress.
-8. 
+8. add_theme_support ('post-thumbnails'); -> adding thumbnail image section to page's admin panel.
+9. the_post_thumbnail() -> display image on page
+    9.1 the_post_thumbnail('thumbnail') -> 150px X 150px
+    9.2 the_post_thumbnail('medium') -> 300px X 300px
+    9.3 the_post_thumbnail('large') -> 1024px X 1024px
+    9.4 the_post_thumbnail('full') -> Original Size
+    9.5 the_post_thumbnail(array(100 ,100)) -> W X H custom size.
+
+10. add_theme_support('custom-header')
+11. echo get_template_directory_uri -> path for images in templates
+12. active class for menu accroding to opened page : 
+13. have_posts() -> check if posts exists.
+14. the_post() -> display post;
+15. <?php while(have_posts()) {
+            the_post();    -> Starting a loop for blogs
+        ?>
+16. Getting tyhe image path(use with img tag ) : $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'small');
+17. <?php the_title(); ?> -> get the title of the post.
+18. <?php echo get_the_date(); ?> -> Getting the publish date
+19. <?php echo substr(get_the_excerpt(), 0 ,150); ?> -> getting and truncate the data using php substr function.
+20. Pagination : install WP-pagenavi pulgin and use echo wp_pagenavi(); function to implement Pagination
+21. wp_head() and wp_footer() -> function used to call scripts in header and footer 
+
+
+WP WEBSITE OPTIMIZATION :
+1. Plugins
+2. 

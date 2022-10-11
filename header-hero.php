@@ -14,8 +14,12 @@
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-img.png"
-                    class="img-fluid animated" alt="">
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-img.png"
+                    class="img-fluid animated" alt=""> -->
+                <?php 
+                    $header_image = get_header_image();
+                ?>
+                <img src="<?php echo get_header_image(); ?>" class="img-fluid animated" alt="">
             </div>
         </div>
     </div>

@@ -45,6 +45,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <?php wp_head(); ?>
 </head>
 
 <body>

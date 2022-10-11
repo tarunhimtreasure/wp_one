@@ -3,3 +3,8 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
 }
+
+.current-menu-item a:link , .current_page_parent a:link    {
+  color: red !important;
+  background-color: blue !important;
+}
