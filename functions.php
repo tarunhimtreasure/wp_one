@@ -10,6 +10,13 @@
 
     add_theme_support(
         'custom-header' // insert logo in header / gives header option in 'appearence' menu 
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Custom Sidebar',
+            'id' => 'custom_sidebar'
+        )
     )
 
 ?>

@@ -30,8 +30,24 @@ Setting up a new theme in wordpress
 19. <?php echo substr(get_the_excerpt(), 0 ,150); ?> -> getting and truncate the data using php substr function.
 20. Pagination : install WP-pagenavi pulgin and use echo wp_pagenavi(); function to implement Pagination
 21. wp_head() and wp_footer() -> function used to call scripts in header and footer 
+22. the_post() / the_date() / the_author() 
+23. Comments section : comment_form() -> adding form to page + add custom css
+24. comments_template() -> comments & form both are displayed.
+25. Display posts category wise : category.php -> page to display posts category wise.
+26. Sidebar : dynamic_sidebar() / register_sidebar()
+27. register_sidebar() -> adding this line to function.php file / adding custom sidebar to website.
+28. get_sidebar() -> create a file sidebar.php and add code to this file and call using this function.
+29. get_title() -> getting the title of the website.
+30. 
+
+
+
+
 
 
 WP WEBSITE OPTIMIZATION :
-1. Plugins
-2. 
+1. Image comporession & Resizing
+2. Cache
+3. https://gtmetrix.com/ check website performance
+
+

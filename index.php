@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php the_title(); ?></h5>
                     <p class="card-text">
-                        <?php echo get_the_date(); ?> | <?php echo substr(get_the_excerpt(), 0 ,150); ?>
+                        <?php echo get_the_date(); ?> | <?php echo substr(get_the_excerpt(), 0 ,150); ?> | <?php the_category(); ?>
                     </p>
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More</a>
                 </div>
