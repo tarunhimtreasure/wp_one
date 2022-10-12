@@ -14,9 +14,15 @@
 
     register_sidebar(
         array(
-            'name' => 'Custom Sidebar',
-            'id' => 'custom_sidebar'
-        )
-    )
+                'name' => 'Custom Sidebar',
+                'id' => 'custom_sidebar'
+            )
+        );
+
+    //ADDING EXCERPT PART TO PAGES
+    add_post_type_support('page','excerpt');
+
+    // CUSTOM POST TYPE
+    
 
 ?>
